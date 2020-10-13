@@ -1,6 +1,6 @@
 .main-container {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: max-content 1fr;
     background: #F8F8F8;
     height: 100vh;
     position: fixed;
@@ -9,4 +9,22 @@
 
 #sidebar {
     box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.07);
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+
+    background: #E8E8E8;
+    border-radius: 4px;
+    justify-items: center;
+    display: grid;
+    row-gap: 5px;
+    align-content: center;
+}
+
+#tags {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
 }
